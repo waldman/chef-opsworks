@@ -1,0 +1,10 @@
+name             'defaults'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures defaults'
+long_description 'Installs/Configures defaults'
+version          '0.1.0'
+
+depends          'apt'
+depends          'sudo', '~> 2.6'
