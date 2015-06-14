@@ -28,16 +28,18 @@ end
 node['defaults']['users'].each do | key, value |
   # Hash mapping
   user_name = key
-  user_comment = value.comment
-  user_groups = value.groups
-  user_sshkeys = value.sshkeys
   user_uid = value.uid
+  user_groups = value.groups
+  user_comment = value.comment
+  user_shell = value.shell
+  user_sshkeys = value.sshkeys
 
   # User
   user key do
     action :create
     comment user_comment
     uid user_uid
+    shell user_shell
   end
   
   # Group Setup
