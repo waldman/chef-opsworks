@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: defaults
-# Recipe:: test
+# Recipe:: test_recipe
 #
 # Copyright (C) 2015 Leon Waldman
 #
