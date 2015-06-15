@@ -11,4 +11,6 @@
 include_recipe 'apt'
 
 # Packages
-package 'apache2'
+package 'apache2' do
+  action :purge
+end
